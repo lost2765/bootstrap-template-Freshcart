@@ -1,0 +1,465 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin-top: 2rem;
+}
+.header .location {
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  color: #505050;
+  transition: 0.2s ease-in;
+}
+.header .location:hover {
+  background: rgba(221, 218, 218, 0.4509803922);
+  border-color: transparent;
+}
+.header .forms {
+  width: 100%;
+}
+.header .forms .inputIcon {
+  position: relative;
+  border-radius: 8px;
+}
+.header .forms .inputIcon input {
+  padding: 0.55rem 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.header .forms .inputIcon .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #ccc;
+}
+.header .end {
+  position: relative;
+}
+.header .end svg {
+  color: #848181;
+}
+.header .end .five {
+  position: absolute;
+  bottom: 10px;
+  left: 26px;
+  font-size: 12px;
+  background: green;
+  padding: 1px 5px;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 100%;
+}
+.header .end .first {
+  position: absolute;
+  bottom: 10px;
+  right: 110px;
+  font-size: 12px;
+  background: green;
+  padding: 1px 5px;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.bottomHeader {
+  margin-top: 3rem;
+}
+.bottomHeader .left a {
+  background: #06bb06;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+.bottomHeader .left a:hover {
+  background: #038603;
+}
+.bottomHeader .left a svg {
+  color: #fff;
+  background: #099309;
+}
+.bottomHeader .right ul li a {
+  color: #212020;
+  font-size: 14px;
+  font-weight: 500;
+}
+.bottomHeader .right ul li i {
+  font-size: 12px;
+  color: #212020;
+}
+
+.slider {
+  position: relative;
+  margin-top: 2rem;
+}
+.slider img {
+  border-radius: 10px;
+}
+.slider .textContent {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  margin-top: 2rem;
+  margin-left: 100px;
+}
+.slider .textContent span {
+  background: #FFC107;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 3px;
+  border-radius: 8px;
+}
+.slider .textContent h2 {
+  font-weight: 800;
+  font-size: 45px;
+}
+.slider .textContent p {
+  color: #787777;
+}
+.slider .textContent a {
+  background: #001E2B;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+.slider .textContent a:hover {
+  background: #012f43;
+}
+.slider .textContent a i {
+  font-size: 12px;
+}
+.slider .textContent .btnBottom {
+  margin-top: 2rem;
+}
+
+.featuredCategories {
+  margin-top: 4rem;
+}
+.featuredCategories i {
+  background: #ccc;
+  padding: 10px 11px;
+  border-radius: 50%;
+  color: #514f4f;
+  transition: 0.2s ease-in-out;
+}
+.featuredCategories i:hover {
+  background: #038603;
+  color: #fff;
+}
+.featuredCategories .sliderContent {
+  margin-top: 2rem;
+  text-align: center;
+}
+.featuredCategories .sliderContent .textBottom {
+  margin-top: 1rem;
+}
+.featuredCategories .sliderContent .item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px 0;
+  width: 15%;
+  transition: 0.2s ease-in;
+}
+.featuredCategories .sliderContent .item:hover {
+  border: 1px solid green;
+  box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.4);
+}
+.featuredCategories .sliderContent a {
+  color: #5c5a5a;
+}
+
+.product {
+  margin-top: 2rem;
+}
+.product .leftTheme {
+  position: relative;
+}
+.product .leftTheme .txtBottom {
+  position: absolute;
+  top: 50px;
+  transform: translate(-50% -50%);
+  left: 40px;
+}
+.product .leftTheme .txtBottom h3 {
+  font-weight: 700;
+}
+.product .leftTheme .txtBottom a {
+  background: #001E2B;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+.product .rightTheme {
+  position: relative;
+}
+.product .rightTheme .txtBottom {
+  position: absolute;
+  top: 50px;
+  transform: translate(-50% -50%);
+  left: 40px;
+}
+.product .rightTheme .txtBottom h3 {
+  font-weight: 700;
+}
+.product .rightTheme .txtBottom a {
+  background: #001E2B;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+}
+
+.popularProducts {
+  margin-top: 5rem;
+}
+.popularProducts .items {
+  position: relative;
+  margin-top: 2rem;
+  padding: 20px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease-in-out;
+}
+.popularProducts .items:hover .hoverEffect {
+  opacity: 1;
+}
+.popularProducts .items .hoverEffect {
+  position: absolute;
+  transition: 0.2s ease-in;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50% -50%);
+  opacity: 0;
+}
+.popularProducts .items .hoverEffect i {
+  border-radius: 8px;
+  color: #363434;
+  background: #e1dede;
+  padding: 10px;
+}
+.popularProducts .items .hoverEffect i:hover {
+  background: #038603;
+}
+.popularProducts .items:hover {
+  border: 1px solid green;
+  box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.4);
+}
+.popularProducts .items .textBottom h2 {
+  font-size: 15px;
+}
+.popularProducts .items .textBottom h2 a {
+  color: #000;
+}
+.popularProducts .items .textBottom .star {
+  color: gold;
+  font-size: 12px;
+}
+.popularProducts .items .textBottom .greenAdd a {
+  background: #04b704;
+  color: #fff;
+  border-radius: 8px;
+  padding: 7px 8px;
+  font-size: 13px;
+}
+.popularProducts .items .textBottom .greenAdd a:hover {
+  background: #05db05;
+}
+.popularProducts .items .imageItem .sale {
+  position: absolute;
+  top: 20px;
+}
+.popularProducts .items .imageItem span {
+  background: rgb(209, 40, 10);
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.popularProducts .items .imageItem .sale2 {
+  position: absolute;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 8px 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.popularProducts .items .imageItem .sale2 span {
+  background: #038603;
+}
+.popularProducts .items .imageItem .sale3 {
+  position: absolute;
+}
+.popularProducts .items .imageItem .sale3 span {
+  background: rgb(209, 40, 10);
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.bestSells {
+  margin-top: 5rem;
+}
+.bestSells img {
+  border-radius: 8px;
+  vertical-align: middle;
+}
+.bestSells .item {
+  margin-top: 2rem;
+  position: relative;
+}
+.bestSells .item .textInfo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.bestSells .item .textInfo h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  display: inline;
+}
+.bestSells .item .textInfo p {
+  color: #fff;
+  font-size: 13px;
+}
+.bestSells .item .textInfo a {
+  color: #fff;
+  background: #0AAD0A;
+  border-radius: 8px;
+  padding: 10px 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+.bestSells .item .textInfo a:hover {
+  background: #038603;
+}
+.bestSells .item .textInfo a i {
+  font-size: 12px;
+}
+.bestSells .item2 {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding: 15px;
+  position: relative;
+}
+.bestSells .item2:hover .hoverEffect {
+  opacity: 1;
+}
+.bestSells .item2 .hoverEffect {
+  position: absolute;
+  transition: 0.2s ease-in;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50% -50%);
+  opacity: 0;
+}
+.bestSells .item2 .hoverEffect i {
+  border-radius: 8px;
+  color: #363434;
+  background: #e1dede;
+  padding: 10px;
+}
+.bestSells .item2 .hoverEffect i:hover {
+  background: #0AAD0A;
+}
+.bestSells .item2:hover {
+  border: 1px solid green;
+  box-shadow: 5px 5px 4px -4px rgba(0, 0, 0, 0.4);
+}
+.bestSells .item2 .time {
+  text-align: center;
+  padding-top: 10px;
+}
+.bestSells .item2 .time .days {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 25%;
+}
+.bestSells .item2 .time .days .num {
+  font-size: 13px;
+}
+.bestSells .item2 .time .days .str {
+  font-size: 12px;
+}
+.bestSells .item2 .time span {
+  display: block;
+}
+.bestSells .item2 .content i {
+  font-size: 13px;
+  color: gold;
+}
+.bestSells .item2 .btnAdd {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.bestSells .item2 .btnAdd a {
+  color: #fff;
+  background: #0AAD0A;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  display: block;
+}
+
+.infos {
+  margin-top: 5rem;
+}
+.infos .text {
+  margin-top: 1rem;
+}
+.infos .text h3 {
+  font-size: 18px;
+}
+.infos .text p {
+  color: #757575;
+}
+
+.footer {
+  margin-top: 5rem;
+  background: #f0f3f2;
+  padding-top: 6rem;
+}
+.footer .links h6 {
+  margin-left: 30px;
+}
+.footer .bottomFooter {
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}
+.footer ul li {
+  margin-top: 10px;
+}
+.footer ul li a {
+  color: #525151;
+  font-size: 14px;
+}
+.footer ul li a:hover {
+  color: #0ace0a;
+}
+.footer .socialFooter .social i {
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */
